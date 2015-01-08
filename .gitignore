@@ -1,0 +1,17 @@
+*.sh
+app/config/database.php
+app/config/mail.php
+public/error_log
+.env.local.php
+/bootstrap/compiled.php
+/vendor
+/admin
+composer.phar
+composer.lock  # Remove this one after you create a project
+.env.php
+.DS_Store
+Thumbs.d
+/.idea
+/idea
+idea/*
+.idea/*

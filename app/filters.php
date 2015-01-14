@@ -88,3 +88,9 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+Route::filter('correo', function()
+{
+	if(Auth::user()->email=='')
+		return Redirect::to('login/correo');
+});

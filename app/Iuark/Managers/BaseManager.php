@@ -1,17 +1,15 @@
-<?php namespace Incubamas\Managers;
+<?php namespace Iuark\Managers;
 
-abstract class BaseManager{
-    
+abstract class BaseManager
+{
     protected $entity;
     protected $data;
     protected $errors;
     
     public function __construct($entity, $data)
     {
-        
         $this->entity = $entity;
         $this->data = array_only($data, array_keys($this->getRules()));
-        
     }
     
     abstract public function getRules();
@@ -43,7 +41,6 @@ abstract class BaseManager{
     {
         return $this->errors;
     }
-    
 }
 
 ?>

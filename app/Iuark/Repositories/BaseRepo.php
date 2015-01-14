@@ -1,8 +1,7 @@
-<?php
+<?php namespace Iuark\Repositories;
 
-namespace Incubamas\Repositories;
-
-abstract class BaseRepo {   
+abstract class BaseRepo
+{
     protected $model;
     
     public function __construct(){
@@ -20,17 +19,6 @@ abstract class BaseRepo {
     public function find($id)
     {    
         return $this->model->find($id);
-    }
-    
-    public function paginate($paginate)
-    {    
-        return $this->model->paginate($paginate);
-    
-    }
-    
-    public function listar_todos($para1, $para2)
-    {
-        return $this->model->lists($para1, $para2);
     }
     
 }
